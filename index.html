@@ -23,15 +23,18 @@
         }
         .left {
             flex-shrink: 0;
-            margin-right: 10px; /* Увеличиваем расстояние между .left и .right */
+            margin-right: 30px; /* Увеличиваем расстояние между .left и .right */
             text-align: right;
         }
         .logo-img {
-            width: 300px;
+            display: block;
+            width: 200px; /* Уменьшаем ширину логотипа */
+            max-width: 100%;
             height: auto;
+            margin-bottom: 20px; /* Добавляем небольшой отступ снизу */
         }
         .download-btn {
-            display: block;
+            display: inline-block;
             padding: 15px 30px;
             font-weight: bold;
             font-size: 24px;
@@ -39,7 +42,7 @@
             color: black;
             text-decoration: none;
             border: 2px solid white;
-            border-radius: 0;
+            border-radius: 5px; /* Делаем кнопку закругленной */
             transition: all 0.3s ease;
             text-align: center;
             margin-top: 20px;
@@ -57,12 +60,12 @@
         .title {
             font-size: 48px;
             font-weight: bold;
-            margin-bottom: 40px; /* Увеличиваем расстояние между .title и .description */
+            margin-bottom: 20px; /* Уменьшаем расстояние между .title и .description */
             text-align: left;
         }
         .description {
             font-size: 24px;
-            margin-bottom: 40px; /* Увеличиваем расстояние между .description и .download-btn */
+            margin-bottom: 20px; /* Уменьшаем расстояние между .description и .download-btn */
             text-align: left;
         }
     </style>
@@ -72,12 +75,12 @@
         <div class="right">
             <div class="title">KitsaOS</div>
             <div class="description">
-                KitsaOS - лучшая операционная система сделанная на базе открытого ядра Linux.
+                KitsaOS - лучшая операционная система на базе открытого ядра Linux.
             </div>
+            <a href="https://linktr.ee/kitsaos" class="download-btn">Скачать KitsaOS</a>
         </div>
         <div class="left">
             <img src="https://i.imgur.com/wEwJYgm.png" alt="KitsaOS Logo" class="logo-img">
-            <a href="https://linktr.ee/kitsaos" class="download-btn">Скачать</a>
         </div>
     </div>
 </body>
